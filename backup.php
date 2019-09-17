@@ -12,5 +12,5 @@ set_time_limit(0);
 
 // Utilizando a classe para gerar um backup na pasta 'backups'
 $backup = new BackupDatabase('backups', 14); //Serão mantidos os últimos 14 backups gerados recentemente
-$backup->setDatabase('localhost', 'website-semad', 'hell', 'hell123'); //Servidor local, Nome do banco de dados, Username, Password
+$backup->setDatabase('localhost', 'database', 'username', 'password'); //Servidor local, Nome do banco de dados, Username, Password
 $backup->generate();

@@ -28,7 +28,7 @@ Fazer backup automático do database
     03 Passo - Editar o arquivo "backup.php"
 
         $backup = new BackupDatabase('backups', 14); //Serão mantidos os últimos 14 backups gerados recentemente
-        $backup->setDatabase('localhost', 'database', 'root', ''); //Servidor local, Nome do banco de dados, Username, Password
+        $backup->setDatabase('localhost', 'database', 'username', 'password'); //Servidor local, Nome do banco de dados, Username, Password
         $backup->generate();                   
 
 
