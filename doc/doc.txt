@@ -1,0 +1,53 @@
+# automatic-backup-of-mysql-database
+
+Fazer backup automático do database
+
+    01 Passo - Instalar o composer no Windows/linux
+
+        Ir até esse endereço eletrônico e fazer o download do composer
+            
+            https://getcomposer.org/
+
+            ou
+
+            https://getcomposer.org/download/
+
+                Procure por Download and run "Composer-Setup.exe"
+
+
+
+    02 Passo - Dentro do diretório do projeto ex.: "C:\laragon\www\automatic-backup-of-mysql-database"
+        Rodar o seguinte comando abaixo, para atualizar todas as dependências e plugins necessários
+
+            $ composer install
+
+            ou
+
+            $ composer update
+
+    03 Passo - Editar o arquivo "backup.php"
+
+        $backup = new BackupDatabase('backups', 14); //Serão mantidos os últimos 14 backups gerados recentemente
+        $backup->setDatabase('localhost', 'database', 'root', ''); //Servidor local, Nome do banco de dados, Username, Password
+        $backup->generate();                   
+
+
+    04 Passo - Editar o arquivo "bkp.bat"
+
+        ONDE ESTÁ ASSIM...
+
+            php C:\laragon\www\backup-database\backup.php
+
+        ALTERAR PARA... AQUI DEPENDE DE ONDE VOCÊ COLOCOU O DIRETÓRIO DO PROJETINHO DE BACKUP...
+
+            php C:\xampp\htdocs\semad\backup-database\backup.php
+
+
+
+    05 Passo - Assistir o vídeo denro do diretório "tutorial/backup database.mp4"
+
+        Ou assistir o vídeo diretamente do youtube "https://www.youtube.com/watch?v=WWWoFsaLjK8"
+
+
+
+    06 Passo - FIM
