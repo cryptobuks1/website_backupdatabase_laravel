@@ -43,11 +43,23 @@ Fazer backup automático do database
             php C:\xampp\htdocs\semad\website_backupdatabase_laravel\backup.php
 
 
+	05 Passo - Executar apartir do prompt de comando
+	
+		Abrir o CMD como administrador, caso contrário não vai funcionar
+		
+			Dentro do diretório raiz do projeto "website_backupdatabase_laravel"
+			
+				Rodar o seguinte comando
+				
+					cd C:\xampp\htdocs\semad\website_backupdatabase_laravel
+					
+					.\bkp.bat
+	
 
-    05 Passo - Assistir o vídeo denro do diretório "tutorial/backup database.mp4"
+    06 Passo - Assistir o vídeo denro do diretório "tutorial/backup database.mp4"
 
         Ou assistir o vídeo diretamente do youtube "https://www.youtube.com/watch?v=WWWoFsaLjK8"
 
 
 
-    06 Passo - FIM
+    07 Passo - FIM
