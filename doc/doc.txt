@@ -36,11 +36,11 @@ Fazer backup automático do database
 
         ONDE ESTÁ ASSIM...
 
-            php C:\laragon\www\backup-database\backup.php
+            php C:\laragon\www\website_backupdatabase_laravel\backup.php
 
         ALTERAR PARA... AQUI DEPENDE DE ONDE VOCÊ COLOCOU O DIRETÓRIO DO PROJETINHO DE BACKUP...
 
-            php C:\xampp\htdocs\semad\backup-database\backup.php
+            php C:\xampp\htdocs\semad\website_backupdatabase_laravel\backup.php
 
 
 
